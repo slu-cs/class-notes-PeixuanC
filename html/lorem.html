@@ -8,62 +8,19 @@
   <head>
     <meta charset="utf-8">
       <title>lorem News</title>
-      <style >
-        body{
-          font-family:"Segoe UI",sans-serif;
-          padding: 1%;
-        }
-
-        header{
-          background:#e9ecef;
-          text-align:center;
-          padding-top: 0.25%;
-          padding-bottom:1.5%;
-
-        }
-        #motto{
-          font-style:italic;
-        }
-        main{
-          width: 75%;
-          float:left;
-        }
-        nav{
-          width:23%;
-          float:right;
-        }
-        main img{
-          float:left;
-          margin-tight:10%
-        }
-
-        nav ul{
-          list-style:none;
-          padding:0;
-        }
-        nav li{
-          padding:5%;
-          border: 1px splid # e9ecef;
-
-        }
-        .article{
-          color: #007bff
-          text-
-        }
-
-
-      </style>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-    <header>
+    <div class="container-fluid">
+    <header class="jumbotron text-center">
         <h1>Lorem News</h1>
-        <span id="motto">the real fake news</span>
+        <span class="font-italic">the real fake news</span>
       </header>
-
-    <main>
+    <div class="row">
+    <main class="col-md-9">
       <article>
         <h2>Featured Story Headline</h2>
-        <img src="http://via.placeholder.com/200x200" >
+        <img src="http://via.placeholder.com/200x200" class="float-left mr-3" >
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt gravida nisi, ac tempus nunc
           maximus et. Praesent non mollis sem, non varius sapien. Pellentesque vel neque sit
           amet tellus rhoncus scelerisque. Suspendisse nec lectus et risus bibendum pellentesque non vel elit. Ut tincidunt
@@ -79,18 +36,18 @@
            Proin vel faucibus ligula.</p>
 
       </article>  </main>
-      <nav>
+      <nav class="col-md-3">
         <h2>see also</h2>
-        <ul>
-          <li><a href="#" calss="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-          <li><a href="#"calss="article">Aliquam tincidunt turpis nec dui rhoncus placerat.</a></li>
-          <li><a href="#"calss="article">Suspendisse placerat magna ac ante elementum, non fringilla sapien placerat.</a></li>
-          <li><a href="#"calss="article">Cras in nisi ac nisl rhoncus molestie.</a></li>
+        <ul class="list-group">
+          <li><a href="#" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+          <li><a href="#">Aliquam tincidunt turpis nec dui rhoncus placerat.</a></li>
+          <li><a href="#">Suspendisse placerat magna ac ante elementum, non fringilla sapien placerat.</a></li>
+          <li><a href="#">Cras in nisi ac nisl rhoncus molestie.</a></li>
         </ul>
       </nav>
 
-
-
+      </div>
+      </div>
     </body>
 
 </html>
