@@ -48,3 +48,6 @@ false==''
 
 //template Strings
 '3+2 is +${3+2}'
+
+//change
+console.log('(now it print this)');
