@@ -11,3 +11,13 @@ while (x<11){
 x--;
 }
 console.log(z);
+
+let x=0
+let z=1
+let y=0
+while(x<1000){
+  y=z;
+  z+=y;
+  x++
+}
+console.log(y);
