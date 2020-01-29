@@ -8,7 +8,7 @@ let z=0;
 while (x<11){
   let y=x
   let z=y**2
-x--;
+x++;
 }
 console.log(z);
 
