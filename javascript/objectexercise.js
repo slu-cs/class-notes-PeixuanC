@@ -44,14 +44,11 @@ for(let i=0;i<sp20.length;i++){
 
 //};
   let ret=0;
-for(const lang of sp20){
-  for(let i=0;i<sp20.length;i++){
+for(let i=0;i<sp10.length;i++){
+
     if(sp20[i].number>ret){
       let ret=sp20[i].number;
     }
 
-  }return ret;
-
-};
-
+  };
 console.log(ret);
