@@ -31,7 +31,7 @@ console.log(languages);
 
 //accessing length and elements;
 for(let i=0;i<languages.length;i++){
-  console.log(langusges[i]);
+  console.log(languages[i]);
 }
 
 //changeing elements
