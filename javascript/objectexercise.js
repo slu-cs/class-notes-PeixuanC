@@ -34,7 +34,7 @@ for(let i=0;i<sp20.length;i++){
 
 sp20.prototype.max=function(){
   let ret=0;
-  for(let i=0;i<sp20.length;1++){
+  for(let i=0;i<sp20.length;i++){
     if(sp20[i].number>ret){
       let ret=sp20[i].number;
     }
