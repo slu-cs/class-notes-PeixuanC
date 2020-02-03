@@ -13,8 +13,8 @@ point.x=3
 
 //nested object literal
 const circle={
-  center:point;
-  radius:4;
+  center:point,
+  radius:4
 };
 
 //accessing subproperties
