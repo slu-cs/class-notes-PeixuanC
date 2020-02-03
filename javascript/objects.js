@@ -13,7 +13,7 @@ point.x=3
 
 //nested object literal
 const circle={
-  center:point'
+  center:point
   radious:4
 };
 
