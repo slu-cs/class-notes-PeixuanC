@@ -43,12 +43,13 @@ for(let i=0;i<sp20.length;i++){
   //}return ret;
 
 //};
-  let ret=0;
+let ret=0;
 for(let i=0;i<sp20.length;i++){
 
     if(sp20[i].number>ret){
       let ret=sp20[i].number;
     }
+    console.log(ret);
 
   };
 console.log(ret);
