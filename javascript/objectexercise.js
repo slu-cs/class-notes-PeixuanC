@@ -52,6 +52,6 @@ for(const lang of sp20){
 
   }return ret;
 
-}
+};
 
 console.log(ret);
