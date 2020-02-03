@@ -42,9 +42,9 @@ const small=new Rectangle(1,2);
 const large=new Rectangle(10,20);
 
 //shared method for all rectangles
-//Rectangle.prototype.area=function(){
-//  return this.width*this.height;
-//};
+Rectangle.prototype.area=function(){
+  return this.width*this.height;
+};
 
 
 console.log(small.area());
