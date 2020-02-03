@@ -41,4 +41,5 @@ sp20.prototype.max=function(){
 
   }return ret;
 
-}console.log(sp20.max());
+};
+console.log(sp20.max());
