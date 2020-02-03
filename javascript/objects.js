@@ -6,7 +6,7 @@ console.log(point);
 
 
 //Accessing porperties
-consle.log(point.x);
+console.log(point.x);
 
 //changing porperties
 point.x=3
