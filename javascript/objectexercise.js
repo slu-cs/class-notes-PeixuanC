@@ -19,23 +19,32 @@ const sta113=new Course("STAT",113);
 
 
 
-const Sp20=function(){
-  [];
-};
+const sp20=[]
 
-Sp20.push(cs364);
-Sp20.push(cs332);
-Sp20.push(cs250);
-Sp20.push(ma280);
-Sp20.push(ma230);
-Sp20.push(sta113);
+
+sp20.push(cs364);
+sp20.push(cs332);
+sp20.push(cs250);
+sp20.push(ma280);
+sp20.push(ma230);
+sp20.push(sta113);
 
 for(let i=0;i<sp20.length;i++){
   console.log(sp20[i]);
 };
 
-Sp20.prototype.max = function(){
+//Sp20.prototype.max = function(){
+
+//  for(let i=0;i<sp20.length;i++){
+  //  if(sp20[i].number>ret){
+    //  let ret=sp20[i].number;
+    //}
+
+  //}return ret;
+
+//};
   let ret=0;
+for(const lang of languages){
   for(let i=0;i<sp20.length;i++){
     if(sp20[i].number>ret){
       let ret=sp20[i].number;
@@ -43,5 +52,6 @@ Sp20.prototype.max = function(){
 
   }return ret;
 
-};
-console.log(Sp20.max());
+}
+
+console.log(ret);
