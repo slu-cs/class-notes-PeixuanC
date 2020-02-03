@@ -32,7 +32,7 @@ for(let i=0;i<sp20.length;i++){
   console.log(sp20[i]);
 };
 
-sp20.prototype.max=function(){
+sp20.prototype.max = function(){
   let ret=0;
   for(let i=0;i<sp20.length;i++){
     if(sp20[i].number>ret){
