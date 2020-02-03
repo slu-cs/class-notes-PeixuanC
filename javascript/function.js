@@ -10,7 +10,7 @@ const avg =function(a,b){
 
  //another definition
  const print = function(a,b){
-   console.log(a=${a},b=${b});
+   console.log(`a=${a},b=${b}`);
  };
 
  //undefined values
@@ -24,7 +24,7 @@ const avg =function(a,b){
    width:10,
    height:20,
    area:function(){
-     return this.wodth*this.height;
+     return this.width*this.height;
    }
  };
 
