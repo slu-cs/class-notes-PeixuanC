@@ -49,7 +49,18 @@ for(let i=0;i<sp20.length;i++){
     if(sp20[i].number>ret){
        ret=sp20[i].number;
     }
-    console.log(ret);
-
   };
 console.log(ret);
+
+
+//2. Define a constructor function for Book objects. Each book should have
+//a title and an array of authors. Define a shared method for books that
+//lets you check whether a given author was one of the authors in this book.
+
+const Book=function(title,author){
+  this.title=title;
+  this.anthor=author;
+
+};
+
+Book.prototype.hasAuthor
