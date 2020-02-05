@@ -30,7 +30,7 @@ user.question('Filename:',function(filename){
 });
 
 //this part isnt after the console
-console.log('here');
+
 
 
 //fie configuration
