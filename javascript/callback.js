@@ -23,3 +23,11 @@ const numbers = [1, 2, 3, 4, 5];
 console.log(map(numbers,square));
 
 console.log(numbers);
+
+//define other tranform with different arrow Function
+console.log(map(numbers,x=>**2));
+console.log(map(numbers,x=>x+1));
+
+//using the array map mnethod
+console.log(numbers.map(x=>x**2));
+console.log(numbers.map(x=>x+2));
