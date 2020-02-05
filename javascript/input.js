@@ -4,12 +4,11 @@ const readline =require('readline');
 
 //console configuration
 const user =readline.createInterface((
-  input:process.stdin;
-  output:process.stdout;
+  input: process.stdin,
 ));
 
 //consle inoput
 user.question('Filename:',function(filename){
   console.log(filename);
-  
+
 }
