@@ -3,7 +3,7 @@
 const mongoose=require('mongoose');
 
 //schema for a collection of  professors
-const Professor - new mongoose.Schema({
+const Professor = new mongoose.Schema({
   name: String,
   rank: String,
   started: Number,
