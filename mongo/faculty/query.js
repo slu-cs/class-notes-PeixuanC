@@ -45,4 +45,4 @@ promise.all(queries)
       console.log('Teaches 362: ', results[3].map(p => p.name));
       console.log('Distinct ranks: ', results[4]);
       mongoose.connection.close();
-    }).cathch(error=>console.error(error.stack;)
+    }).catch(error => console.error(error.stack));
