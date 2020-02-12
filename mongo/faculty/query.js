@@ -31,10 +31,7 @@ const queries=[
 
 ];
 
-promise.all(queries)
-  .then(function(results){
-    console.log('Names in');
-  })
+
 
 
   Promise.all(queries)
