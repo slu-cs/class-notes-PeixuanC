@@ -8,13 +8,22 @@ const numbers = [1, 2, 3, 4, 5];
 const filter=function(array,transform){
   const copy=[];
   for( const element of array){
-    copy.push(transform(element));
+    if(transform(elementelement)){
+      copy.push(element);
+    }
+
   }
   return copy;
 };
 
-const odds = numbers.filter(x => x%2 > 0);
+
+const odds2 = filter(numbers, x => x%2 > 0);
+
+
+const num=[4,2,5,1,3];
+
+const sort=function(array,)
 
 
 
-console.log(odds);
+console.log(odds2);
