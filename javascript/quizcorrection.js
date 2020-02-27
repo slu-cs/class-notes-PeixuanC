@@ -35,7 +35,7 @@ const find=function(array,callback){
       return element;
     }
   }return undefined;
-});
+};
 //////////////////////////////////////////////////////////////// Question 3
 
 // This creates the user object described on the quiz.
