@@ -29,7 +29,7 @@ const numbers = [5, 4, 3, 2, 1];
 numbers.find(x=>x%2===0);
 
 // B. Define a standalone find function. The array is its first argument and the callback is its second argument.
-const find=function(array,function(){
+const find=function(array,callback{
   for(const element of array){
     if(callback(element)){
       return element;
