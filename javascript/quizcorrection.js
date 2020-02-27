@@ -16,7 +16,7 @@ const bigLab=(labs.filter(x => x.seats > 10)
 
 
 // C. Sort the existing array in order of (increasing) seat numbers (by invoking the built-in sort method).
-labs.sort((a,b)=>(a.seats)-(b.seats));
+labs.sort((a,b)=>a.seats-b.seats);
 
 //////////////////////////////////////////////////////////////// Question 2
 
