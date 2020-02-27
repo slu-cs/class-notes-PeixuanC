@@ -10,13 +10,16 @@ const labs = [
 
 // A. Generate a new array containing the seat numbers of all the labs (by invoking the built-in map method).
 const seat=labs.map(p=>p.seats);
+console.log(seat);
 
 // B. Generate a new array containing only the labs with more than 10 seats (by invoking the built-in filter method).
-const bigLab=(labs.filter(x => x.seats > 10)
+const bigLab=(labs.filter(x => x.seats > 10);
+console.log(bigLab);
 
 
 // C. Sort the existing array in order of (increasing) seat numbers (by invoking the built-in sort method).
-labs.sort((a,b)=>(a.seats-b.seats));
+labs.sort((a,b)=>(a.seats-b.seats))
+ console.log(labs);
 
 //////////////////////////////////////////////////////////////// Question 2
 
