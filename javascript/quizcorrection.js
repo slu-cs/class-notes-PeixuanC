@@ -37,10 +37,9 @@ const find=function(array,callback){
   }return undefined;
 };
 //////////////////////////////////////////////////////////////// Question 3
-
+/*
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
-/*
 const readline = require('readline');
 const user = readline.createInterface({
   input: process.stdin,
@@ -70,8 +69,6 @@ user.question("what is your name?")
 })
 .then(r2=>console.log("I am also"+r2+"."))
 */
-
-
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
 // When you're ready to work on Question 4, uncomment it and comment out Question 3.
@@ -87,4 +84,14 @@ const f2 = function() {
 };
 
 // Run f1 and f2 in parallel and log 'f1', 'f2', or 'equal' to indicate which function returned the larger result.
-f1
+
+const flist=[f1, f2];
+
+Promise.all(flist)
+.then(function(r){
+  if(r[0]>r[1]){
+    console.log("f1");
+  }else if(r[1]>r[0]){
+    console.log("f2");
+  }else{console.log("equal");}
+})
