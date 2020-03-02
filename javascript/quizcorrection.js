@@ -40,6 +40,7 @@ const find=function(array,callback){
 
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
+/*
 const readline = require('readline');
 const user = readline.createInterface({
   input: process.stdin,
@@ -62,12 +63,19 @@ const question = function(prompt) {
 };
 
 // B. Make small talk again, using promises.
+user.question("what is your name?")
+.then(function(r1){
+  console.log("hello"+r1+'.');
+  return user.question("How are you doing?")
+})
+.then(r2=>console.log("I am also"+r2+"."))
+*/
 
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
 // When you're ready to work on Question 4, uncomment it and comment out Question 3.
-/*
+
 // This function returns a promise, which produces 42 after an asynchronous delay of one second.
 const f1 = function() {
   return new Promise(resolve => setTimeout(() => resolve(42), 1000));
@@ -79,6 +87,4 @@ const f2 = function() {
 };
 
 // Run f1 and f2 in parallel and log 'f1', 'f2', or 'equal' to indicate which function returned the larger result.
-
-
-*/
+f1
