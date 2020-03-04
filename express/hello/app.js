@@ -1,15 +1,14 @@
-//hello world web server
+// Hello world web server
 const express = require('express');
 
-//Create the server
-const app = express
+// Create the server
+const app = express();
 
-//Respond to one single request
-app.get('/', function(request,response){
-  response,send('Hello Handsome')
-})
+// Respond to one request
+app.get('/', function(request, response) {
+  response.send('Hello Handsome');
+});
 
-
-// start the server
+// Start the server
 app.listen(3000);
-console.log('Server');
+console.log('Server is ready.');
