@@ -4,12 +4,12 @@ const express = require('express');
 // Create the server
 const app = express();
 
-//log request to the console\
-app.use(function(request, response, next){
-  console.log('----------------------',new Data().toLocaleTimeString());
+// Log requests to the console
+app.use(function(request, response, next) {
+  console.log('---------------------', new Date().toLocaleTimeString());
   console.log(request.method, request.url);
-  console.log('body =', request.body);
-  next();//keep hadling this request
+  console.log('Body =', request.body);
+  next(); // Keep handling this request
 });
 
 //home page
