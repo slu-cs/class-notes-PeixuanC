@@ -27,7 +27,7 @@ app.get('/zap/:z', function(request, response) {
 
 //cs-Linuxlab-11.stlawu.edu:3000/zap?x=X&y=Y
 app.get('/zap/:z', function(request, response) {
-  response.send('Hello zap with ${request.params.x}');
+  response.send('Hello zap with ${request.params.z}');
 });
 
 // cs-linuxlab-09.stlawu.edu:3000/zap?x=&y=
