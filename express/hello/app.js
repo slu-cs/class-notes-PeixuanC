@@ -20,10 +20,6 @@ app.get('/foo/bar', function(request, response) {
   response.send('Hello bar');
 });
 
-//cs-Linuxlab-11.stlawu.edu:3000/zap/z(for any z)
-app.get('/zap/:z', function(request, response) {
-  response.send('Hello ${request.params.z}');
-});
 
 //cs-Linuxlab-11.stlawu.edu:3000/zap?x=X&y=Y
 app.get('/zap/:z', function(request, response) {
