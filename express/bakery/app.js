@@ -26,8 +26,8 @@ app.get('/', function(request, response) {
 });
 
 // Routing
-app.use('/cakes', require('./cakes.js'));
-app.use('/pies', require('./pies.js'));
+app.use('/cakes', require('./cake.js'));
+app.use('/pies', require('./pie.js'));
 
 // Handle undefined routes
 app.use(function(request, response, next) {
