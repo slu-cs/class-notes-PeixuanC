@@ -4,6 +4,9 @@ const express = require('express');
 // Create the server
 const app = express();
 
+//use a view engine
+app.set('view ')
+
 // Ignore icon requests
 app.get('/favicon.ico', function(request, response) {
   response.status(204).end();
@@ -19,13 +22,7 @@ app.use(function(request, response, next) {
 
 // cs-linuxlab-##.stlawu.edu:3000/
 app.get('/', function(request, response) {
-  response.send(`
-    <h1>Bakery</h1>
-    <ul>
-      <li><a href="/cakes">Cakes</a></li>
-      <li><a href="/pies">Pies</a></li>
-    </ul>
-  `);
+  response.render('index');
 });
 
 // Routing
