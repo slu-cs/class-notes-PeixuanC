@@ -6,8 +6,9 @@ const router = express.Router();
 
 const cakes = [
   {id: 'vanilla', flavor:'Vanilla'}
+
   {id: 'chocolate', flavor:'Chocolate'}
-]
+];
 
 // cs-linuxlab-##.stlawu.edu:3000/cakes/
 router.get('/', function(request, response) {
