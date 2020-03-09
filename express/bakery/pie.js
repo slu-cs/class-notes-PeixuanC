@@ -17,13 +17,7 @@ router.get('/', function(request, response) {
 
 // cs-linuxlab-##.stlawu.edu:3000/pies/id
 router.get('/:id', function(request, response, next) {
-  if (request.params.id === 'apple') {
-    response.send('Apple cakes');
-  } else if (request.params.id === 'cherry') {
-    response.send('Cherry cakes');
-  } else {
-    next(); // Pass on this request
-  }
+  const pie = pies.find(pie => pie.id === request.params.id);
 });
 
 module.exports = router;
