@@ -1,16 +1,18 @@
 // Bakery web server
 const express = require('express');
 
+// Florist web server
+const express = require('express');
+
 // Create the server
 const app = express();
 
-//use a view engine
+// Use a view engine
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-//Parse request bodies
-app.use(express.urlencoded({extended:false}));
-
+// Parse request bodies like query strings
+app.use(express.urlencoded({extended: false}));
 
 // Ignore icon requests
 app.get('/favicon.ico', function(request, response) {
@@ -25,7 +27,7 @@ app.use(function(request, response, next) {
   next(); // Keep handling this request
 });
 
-// cs-linuxlab-##.stlawu.edu:3000/
+// Render a home page
 app.get('/', function(request, response) {
   response.render('index');
 });
