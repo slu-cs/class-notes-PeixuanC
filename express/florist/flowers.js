@@ -12,16 +12,19 @@ let flowers = [
 
 // GET /flowers
 router.get('/', function(request, response) {
-  response.send(flowers);
+  if(request.query.color){
+
+  })
 });
 
 // GET /flowers/id
-router.get('/:id', function(request, response, next) {
-  const flower = flowers.find(f => f.id === request.params.id);
-  if (!flower) {
-    next(); // Leads to 404
+router.get('/', function(request, response) {
+  if (request.query.color) {
+    response.send(flowers.filter(f => f.color === request.query.color));
+  } else if (request.query.season) {
+    response.send(flowers.filter(f => f.season === request.query.season));
   } else {
-    response.send(flower);
+    response.send(flowers);
   }
 });
 
