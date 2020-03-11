@@ -1,5 +1,4 @@
-// Bakery web server
-const express = require('express');
+
 
 // Florist web server
 const express = require('express');
